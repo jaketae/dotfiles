@@ -4,9 +4,9 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Setting PATH
 export PYTHON_HOME="/Library/Frameworks/Python.framework/Versions/3.7"
 export SPARK_HOME="/Users/jaketae/opt/apache-spark/spark-2.4.5-bin-hadoop2.7"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 export PATH="${PYTHON_HOME}/bin:${PATH}:${SPARK_HOME}/bin"
 # export MYSQL_HOME=/usr/local/mysql/bin:$PATH
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home"
 
 # RStudio configuration
 export RSTUDIO_WHICH_R="/Users/jaketae/opt/anaconda3/envs/R/bin/R"
@@ -30,7 +30,7 @@ unset __conda_setup
 
 # Alias
 alias clean='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
-alias convert='cd /Users/jaketae/documents/github/jaketae.github.io/_jupyter; ./convert.sh $1'
+alias format='cd /Users/jaketae/documents/github/jaketae.github.io/_jupyter; ./format.sh $1'
 alias init='cd /Users/jaketae/documents/github/script-automation-projects/repo-initializer; ./init.sh $1'
 alias mygcc='gcc -std=c99 -Wall -Wsign-compare -Wwrite-strings -Wtype-limits -Werror -pedantic -o $1 $2'
 alias r='export RSTUDIO_WHICH_R=/Users/jaketae/opt/anaconda3/envs/R/bin/R; cd /Applications; open RStudio.app'
